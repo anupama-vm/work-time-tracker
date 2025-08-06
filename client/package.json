@@ -1,0 +1,38 @@
+{
+  "name": "work-time-tracker-client",
+  "version": "1.0.0",
+  "description": "Client for displaying activity logs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "electron": "^25.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.worktimetracker.app",
+    "productName": "Work Time Tracker",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules",
+      "!dist"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

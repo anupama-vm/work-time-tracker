@@ -22,3 +22,5 @@ tracker/activity_logs.db
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+client/node_modules

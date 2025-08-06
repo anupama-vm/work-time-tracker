@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Work Time Tracker</title>
+  <style>
+    body { font-family: Arial; padding: 1em; }
+    .container { max-width: 400px; margin: auto; }
+    label { display: block; margin-top: 1em; }
+    input, button { width: 100%; padding: 10px; margin-top: 5px; }
+    button { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Work Time Tracker</h2>
+    <form id="signup-form">
+      <label for="email">Company Email</label>
+      <input type="email" id="email" placeholder="Enter your company email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <button id="start-tracker" style="margin-top: 20px;">Start Tracker</button>
+    <button id="stop-tracker" style="margin-top: 10px;" disabled>Stop Tracker</button>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@ import sqlite3
 import os
 from datetime import datetime
 
-DB_PATH = "tracker/activity_logs.db"
+DB_PATH = "storage/activity_logs.db"
 
 class Storage:
     def __init__(self):
